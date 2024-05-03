@@ -1,0 +1,150 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 16px;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+button[disabled] {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Password Toggle */
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff4136;
+    text-align: center;
+}
+
+.form-success {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2ecc40;
+    text-align: center;
+}
+
+.password-strength-meter {
+    margin-bottom: 20px;
+}
+
+.password-strength-meter-bar {
+    height: 12px;
+    width: 0;
+    background-color: #d6d6d6;
+    transition: width 0.3s ease-in-out;
+}
+
+.password-strength-meter-label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #999;
+    margin-top: 12px;
+}
+
+#captcha-text{
+    font-family: 'Special Elite', cursive;
+    height: 75px;
+    display: block;
+    width: 100%;
+    background: #aaa;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    letter-spacing: 7px;
+    font-style: oblique;
+    margin-bottom: 10px;
+    user-select: none;
+
+}
+#help-text{
+    margin-top: 0;
+    text-align: left;
+    font-size: 13px;
+    color: #1d00ff;
+}
+.hide
+{
+    display: none;
+}
+.show
+{
+    display: block;
+}
+.g-recaptcha{
+    margin-bottom: 20px;
+    width: 100%;
+}
